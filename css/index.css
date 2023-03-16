@@ -1399,7 +1399,17 @@ input::placeholder {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-animation: bganimation 10s infinite;
+  -moz-animation: bganimation 10s infinite;
+  -o-animation: bganimation 10s infinite;
+  -ms-animation: bganimation 10s infinite;
+  animation: bganimation 10s infinite;
+  background-size: 800%;
 }
+作者: Cyan,
+链接: https:,
+来源: Cyan,
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。,
 h1,
 h2,
 h3,
@@ -1411,6 +1421,10 @@ h6 {
   color: var(--text-highlight-color);
   font-weight: bold;
 }
+作者: Cyan code,
+链接: https: code,
+来源: Cyan code,
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 code,
 h1 code,
 h2 code,
 h3 code,
@@ -5577,4 +5591,61 @@ blockquote.pullquote.right {
 .read-mode #article-container .note:before,
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
+}
+.canvas-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.read-mode .canvas-container {
+  display: none;
+}
+@-moz-keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
